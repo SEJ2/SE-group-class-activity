@@ -1,11 +1,21 @@
 #include <mutex>
 #include <iostream>
 
+using namespace std;
+
 class CaptainKirk{
+
+   int number = 2;
     public:
     
-    int number = 2;
-    static Singleton* instance;
+    static Singleton* get_instance();
 
     printf(number);
+}
+
+
+int main()
+{
+    
+    
 }
