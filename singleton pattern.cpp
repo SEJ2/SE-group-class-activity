@@ -3,12 +3,19 @@
 
 using namespace std;
 
+// creating the class Captain Kirk
 class CaptainKirk{
 
-   int number = 2;
+// private variables of the class
+   int number = 2; 
+//public variable scope of the class
     public:
-    
-    static Singleton* get_instance();
+
+//static class constructor
+    static Singleton* get_instance(){
+       
+    }
+
 
     printf(number);
 }
