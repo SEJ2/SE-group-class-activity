@@ -5,11 +5,18 @@ using namespace std;
 
 // creating the class Captain Kirk
 class CaptainKirk{
-
-// private variables of the class
-   int number = 2; 
+   int* Data;
 //public variable scope of the class
     public:
+    //class constructor 
+    CaptainKirk(int* data): Data(data){
+    }
+ //method to that gets the data the user input
+     int print_data(){
+         cout << " captain's data is : " << *Data;
+         return 0;
+      }
+};
 
 //static class constructor
     static Singleton* get_instance(){
